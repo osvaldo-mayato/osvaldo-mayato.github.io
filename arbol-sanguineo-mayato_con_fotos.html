@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Árbol Genealógico Sanguíneo — Familia Mayato</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#d8cbb0;font-family:'EB Garamond',serif;color:#2d1f14;padding:40px 20px 60px}
+header{text-align:center;margin-bottom:36px}
+.orn{color:#a87828;font-size:.95rem;letter-spacing:10px;margin:6px 0}
+h1{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:700;letter-spacing:.05em;color:#2d1f14}
+.subtitle{font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:#7a5030;margin-top:4px}
+.credit{font-size:.78rem;color:#a07848;margin-top:4px}
+.tree-scroll{overflow-x:auto;padding-bottom:12px}
+.tree-scroll svg{display:block}
+.legend{margin:24px auto 0;max-width:1100px;background:rgba(254,248,236,.88);border:1px solid #cca060;border-radius:4px;padding:16px 24px}
+.legend h3{font-family:'Playfair Display',serif;font-style:italic;font-size:.92rem;color:#2d1f14;margin-bottom:10px;text-align:center}
+.legend-items{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:center}
+.li{display:flex;align-items:center;gap:7px;font-size:.78rem;color:#5a3d28}
+.ls{width:18px;height:12px;border-radius:2px;flex-shrink:0}
+.ll{width:22px;height:0;border-bottom:1.6px solid #b0813a;flex-shrink:0}
+.lld{width:22px;height:0;border-bottom:1.6px dashed #b0813a;flex-shrink:0;opacity:.7}
+.footnotes{margin:16px auto 0;max-width:1100px;background:rgba(254,248,236,.65);border:1px solid #cca060;border-radius:4px;padding:14px 22px}
+.footnotes h4{font-family:'Playfair Display',serif;font-style:italic;font-size:.86rem;color:#5a3d28;margin-bottom:8px}
+.footnotes p{font-size:.74rem;color:#7a5030;font-style:italic;line-height:1.55;margin-bottom:5px}
+.fn-src{background:rgba(200,160,96,.14);border-left:3px solid #c8a060;padding:5px 9px;margin:7px 0;border-radius:2px}
+</style>
+</head>
+<body>
+<header>
+  <div class="orn">&#10022; &#10022; &#10022;</div>
+  <h1>Árbol Genealógico</h1>
+  <div class="orn">—</div>
+  <p class="subtitle">Línea sanguínea Mayato &middot; Buenos Aires, Argentina</p>
+  <p class="credit">Elaborado por Odila Natalia Marisol Mayato</p>
+  <div class="orn">&#10022; &#10022; &#10022;</div>
+</header>
+
+<div class="tree-scroll">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1640 1250" width="1640" height="1250">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a87828" opacity="0.7"/></marker></defs>
+<rect x="0" y="0" width="1640" height="1250" fill="#ece0c2" stroke="none" stroke-width="0" rx="0"/>
+<defs><radialGradient id="bg1" cx="30%" cy="35%"><stop offset="0%" stop-color="rgba(155,115,55,0.12)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+<rect x="0" y="0" width="1640" height="1230" fill="url(#bg1)"/>
+<line x1="489" y1="74" x2="489" y2="134" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="90" y1="134" x2="1230" y2="134" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="90" y1="134" x2="90" y2="150" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="255" y1="134" x2="255" y2="150" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="730" y1="134" x2="730" y2="150" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="1230" y1="134" x2="1230" y2="150" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="625" y1="194" x2="625" y2="258" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="590" y1="258" x2="980" y2="258" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="590" y1="258" x2="590" y2="272" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="980" y1="258" x2="980" y2="272" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="1089" y1="343" x2="1089" y2="424" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="870" y1="424" x2="1098" y2="424" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="870" y1="424" x2="870" y2="450" stroke="#b0813a" stroke-width="1.6"/>
+<line x1="1098" y1="424" x2="1098" y2="450" stroke="#b0813a" stroke-width="1.6"/>
+<polyline points="1098,592 1098,620 990,620 990,655" stroke="#b0813a" stroke-width="1.8" fill="none"/>
+<line x1="1108" y1="726" x2="1108" y2="865" stroke="#b0813a" stroke-width="1.8"/>
+<line x1="1108" y1="936" x2="1108" y2="1075" stroke="#b0813a" stroke-width="1.8"/>
+<polyline points="1230,238 1230,260 1198,260 1198,272" stroke="#a87828" stroke-width="1.1" fill="none" stroke-dasharray="5,4" marker-end="url(#arr)"/>
+<rect x="1103" y="245" width="222" height="14" fill="#ece0c2" stroke="#a87828" stroke-width="1" rx="3" stroke-dasharray="3,2"/>
+<text x="1214" y="256" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#a07828">hipótesis: Lucila hija de Juan Pablo *</text>
+<rect x="74" y="30" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="74" y="30" width="4" height="88" fill="#a87828" stroke="none" stroke-width="0" rx="0"/>
+<text x="155" y="46" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Josefa Gutiérrez</text>
+<text x="155" y="62" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿? — ¿?</text>
+<text x="155" y="75" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">morena libre · lavandera y planchadora</text>
+<text x="155" y="87" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">2das nupcias de Antonio</text>
+<rect x="297" y="30" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="297" y="30" width="4" height="88" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<text x="378" y="46" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Antonio Mayato</text>
+<text x="378" y="62" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿? — ¿?</text>
+<text x="378" y="75" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">albañil · Cofradía N.ª S.ª del Socorro</text>
+<text x="378" y="87" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">vivo en 1861 (testam. AGN)</text>
+<rect x="321.7" y="100" width="112.6" height="14" fill="#5c3018" stroke="none" stroke-width="0" rx="7"/>
+<text x="378" y="110" text-anchor="middle" font-family="'Playfair Display',serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#fdf6e8">natural de África</text>
+<rect x="519" y="30" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="519" y="30" width="4" height="88" fill="#a87828" stroke="none" stroke-width="0" rx="0"/>
+<text x="600" y="46" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">María Islas</text>
+<text x="600" y="62" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿? — ¿?</text>
+<text x="600" y="75" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">negra africana</text>
+<text x="600" y="87" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">fallecida antes de 1861</text>
+<rect x="9" y="150" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="9" y="150" width="4" height="88" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<text x="90" y="166" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Marta Mayato</text>
+<text x="90" y="182" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿?</text>
+<text x="90" y="195" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">casada con Francisco Corpe</text>
+<text x="90" y="207" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">(negro libre)</text>
+<rect x="174" y="150" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="174" y="150" width="4" height="88" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<text x="255" y="166" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Eustaquia Mayato</text>
+<text x="255" y="182" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿?</text>
+<text x="255" y="195" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">soltera en 1843 (testam. AGN)</text>
+<rect x="439" y="150" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="439" y="150" width="4" height="88" fill="#a87828" stroke="none" stroke-width="0" rx="0"/>
+<text x="520" y="166" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Emilia Silva</text>
+<text x="520" y="182" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿?</text>
+<text x="520" y="195" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">también tuvo hijos con</text>
+<text x="520" y="207" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">Feliciano Vico (rama no Mayato) †</text>
+<rect x="649" y="150" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="649" y="150" width="4" height="88" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<text x="730" y="166" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Benito Vicente Mayato</text>
+<text x="730" y="182" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">03/04/1824</text>
+<text x="730" y="195" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">Reg. bautismo · Iglesia Monserrat</text>
+<text x="730" y="207" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">~17 años en 1843 (testam. AGN)</text>
+<rect x="1149" y="150" width="162" height="88" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="1149" y="150" width="4" height="88" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<text x="1230" y="166" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Juan Pablo Mayato</text>
+<text x="1230" y="182" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿?</text>
+<text x="1230" y="195" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">soltero en 1843 (testam. AGN)</text>
+<rect x="1150.5" y="208" width="159.0" height="14" fill="none" stroke="none" stroke-width="1" rx="7" stroke-dasharray="3,2"/>
+<text x="1230" y="218" text-anchor="middle" font-family="'Playfair Display',serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#9a7050">posible padre de Lucila *</text>
+<rect x="509" y="272" width="162" height="142" fill="#f8f8ee" stroke="#9a9a70" stroke-width="1.5" rx="4" stroke-dasharray="4,3"/>
+<text x="590" y="288" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="normal" font-style="normal" fill="#4a4a2a">? Hijo de</text>
+<text x="590" y="302" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="normal" font-style="normal" fill="#4a4a2a">Benito y Emilia</text>
+<text x="590" y="318" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">nombre desconocido</text>
+<rect x="699" y="272" width="162" height="142" fill="#f8f8ee" stroke="#9a9a70" stroke-width="1.5" rx="4" stroke-dasharray="4,3"/>
+<text x="780" y="288" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="normal" font-style="normal" fill="#4a4a2a">Inés ????? de Mayato</text>
+<text x="780" y="304" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">apellido de soltera desconocido</text>
+<rect x="899" y="272" width="162" height="142" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="899" y="272" width="4" height="142" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp0"><circle cx="980" cy="308" r="30"/></clipPath>
+<image href="data:image/jpeg;base64,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" x="950" y="278" width="60" height="60" clip-path="url(#cp0)"/>
+<circle cx="980" cy="308" r="30" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="980" y="346" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Antonio Gregorio Mayato</text>
+<text x="980" y="362" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">1868 – 1/8/1931</text>
+<text x="980" y="375" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">63 años</text>
+<rect x="1117" y="272" width="162" height="142" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="1117" y="272" width="4" height="142" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<text x="1198" y="288" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Lucila Mayato de Mayato</text>
+<text x="1198" y="304" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿?</text>
+<text x="1198" y="317" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">1ras nupcias</text>
+<rect x="1141.7" y="330" width="112.6" height="14" fill="none" stroke="none" stroke-width="1" rx="7" stroke-dasharray="3,2"/>
+<text x="1198" y="340" text-anchor="middle" font-family="'Playfair Display',serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#9a7050">origen incierto *</text>
+<rect x="1330" y="272" width="162" height="142" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="1330" y="272" width="4" height="142" fill="#a87828" stroke="none" stroke-width="0" rx="0"/>
+<text x="1411" y="288" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Felisa Cerante de Mayato</text>
+<text x="1411" y="304" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿?</text>
+<text x="1411" y="317" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">2das nupcias</text>
+<text x="1411" y="329" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">sin descendencia conocida</text>
+<rect x="789" y="450" width="162" height="142" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="789" y="450" width="4" height="142" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp1"><circle cx="870" cy="486" r="30"/></clipPath>
+<image href="data:image/jpeg;base64,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" x="840" y="456" width="60" height="60" clip-path="url(#cp1)"/>
+<circle cx="870" cy="486" r="30" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="870" y="524" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Antonio Vicente</text>
+<text x="870" y="538" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Evaristo Mayato</text>
+<text x="870" y="554" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">¿? — ¿?</text>
+<text x="870" y="567" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">sin descendencia conocida</text>
+<text x="870" y="579" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">vivo en 1951</text>
+<text x="870" y="591" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">construyó casa en</text>
+<text x="870" y="603" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">San Antonio de Padua</text>
+<rect x="1017" y="450" width="162" height="142" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="1017" y="450" width="4" height="142" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp2"><circle cx="1098" cy="486" r="30"/></clipPath>
+<image href="data:image/jpeg;base64,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" x="1068" y="456" width="60" height="60" clip-path="url(#cp2)"/>
+<circle cx="1098" cy="486" r="30" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="1098" y="524" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">María Esther Mayato</text>
+<text x="1098" y="540" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">16/3/1902 – 24/3/1970</text>
+<text x="1098" y="553" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">68 años · hemorragia cerebral</text>
+<rect x="909" y="655" width="162" height="142" fill="#fff8ee" stroke="#8b1a1a" stroke-width="2.5" rx="4"/>
+<rect x="909" y="655" width="6" height="142" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp3"><circle cx="990" cy="691" r="30"/></clipPath>
+<image href="data:image/jpeg;base64,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" x="960" y="661" width="60" height="60" clip-path="url(#cp3)"/>
+<circle cx="990" cy="691" r="30" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="990" y="729" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Osvaldo Héctor Mayato</text>
+<text x="990" y="745" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">8/5/1931 – 11/9/2006</text>
+<text x="990" y="758" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">Pintor · Inventor · Activista cultural</text>
+<text x="990" y="770" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#9a7050">Cofundador del Grupo Cosmos</text>
+<rect x="927.9" y="783" width="124.2" height="14" fill="#8b1a1a" stroke="none" stroke-width="0" rx="7"/>
+<text x="990" y="793" text-anchor="middle" font-family="'Playfair Display',serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#fdf6e8">Grupo Cosmos · 1959</text>
+<rect x="1145" y="655" width="162" height="142" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="1145" y="655" width="4" height="142" fill="#a87828" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp4"><circle cx="1226" cy="691" r="30"/></clipPath>
+<image href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD590a/1fwB47S6aFo7vTbh4riFujqOHQ+xH9DX2Rp9zFdWUF3A6PFPGsiFT1DDIP618jfFqNj8Qtf+0W0tpcibzZYX5w3cqe6kEMPr3617/wDBPXIZ/hDpl7dSDFjG9rKc55jJAH/fJWuSorpM6Kbs2jvXnWNSSwGcnFcP8UNa+0eHmsf7QTTYZnCzySzrGJE7pk84PfH071J4x8Zab4Y8OPr2s8mRillax/ekbGQM+/c9hXyn468W6r4v1ltS1IRAhdkcca/LGufujP8AOlThdlTmoo92Xw/oFzbT3dpf6WUeLh0ukUYHpzg9K5y406MhnsbiC7TofKkD4x1yRxXhbgj5SowwzjFdv8EJ418axabPKIrfUIzA+5tqsR8yj3PGPxrVwsr3M1Uu7WOusYD9pOfl4zW0olUbIvm4DKNwAB6ZNbGu+H20y7wYuudu0cYrPVRHyVJO3sM5rO9zS1jO/aqiA8faZfCNBDdaYIxKv8bKzA59cAr+FanwJ0jU4fCgN1cMlnd3P2iO3PT7u3J9CQOlcT8U7HxHrvxKt9P1G6kuJbtUNsCCsUUTdQq9BtwckZ+tfRui2C23hu3toREsMeyMKByDgD+n1obtBIUFebZ5F+1xZSW8HhtuluokUgH+LAOfyrwmxs3vbtIo455BuyyQxM7KueTgV9TftLeHr/V/Ctn9j37rd9zAjco47n29a4LQPDWp6X4YhXR45XlOGeRLryFU8bnZurewyAMVUJ2iTODcjz7W/h9qdvZ2tzp1td3gliV5R5ezYSTgc85AGT6ZFcjIl5pWorkSW11byK6+qMDkGvojV9YvIPDZ0u4v3D8pNdMdz7Gz3HPHGccgZ5PWvH/iJoM+nQ2d672Miy/uybXPPGctnnJOf0qoSb0ZM4JbHv8A4T8Rt8QPh/FqJQC+hzDdbRjEijJK+gIIP41zaRLI2yQggEhu+CD0rqv2ZNMhf4VwMbVYGnlkZmB5lOcBufYY/CsbxVay2HiG5tEhuC5JYMR8mM8ZP/1qw0Umkb7xTZva3ov2vxDpOpMwhnsWeMFVBMkcgwQD2IOMfjXof9mzw6bawKpjkRs7C2ee2a4jxvFIbfTr63maNLPULeW4jHSaPeAVPpXp2lXkOoQrGtvIqJIdrSHpg9fWpb0RXUwvHQSbwPfm6mntgkJEjJgOvHOM15b4BmsZdAhjxNPboPl8w5Zu/PPWvbdegWRBCY45Y5FKTLt+U/X8OK8s1jwxfeHrt7nR0DWEvzNbFcGM/wCyR29qIvSwdTk/ETWV2bmWE4kjj8gxmJWRM54AP161n+HfDlp8R5tL0zUDJa2sUbyTPCuXkEW1QPbcSBn61s6tqQjjkXUNMvEeRgFMcQYk+mRmtf4PWx8M39xe3sLGW+GxRnmFN2cfX1rS7SIauz0XwLaLptp/YwhW3htgI4VQcIB0FcB8UGSx12Np5fMZgQpK9PbpXoOmFLFJ7xzhdxZMvkdeK8T8Wa0dd8XTSNGxigYx7icMGPJBwccVnFXdy27HZfEW9aLwNqKW1rJdXEyCGJY22srvwGz2wefriue8E6l8atPhWSS+N0xYfuL6BJGOe4Y4J7Z5rr/BVqdT1HzJGJSE4UKAQH4JbnvjivWHsYJbJ0kjVlIwygEEj1HuOtNy5dLEtXdzM0M+IbnT4V1u0sBc4y/2VygU/Q5H6029jVgYZkI4/iH+HWr1qk9tm284zBTgt/EFIyPqKnuZLcRlWjV424OOoNZFHC674b0+YhzGCAd2D2NN0nRYgN8gBUfdBGcGuqv7CGSLMUxAbGFIqFraE2mxMArntg1V9BnN+J7mK10eSJSWYgjbnivCgt1Bd3EEqNFNHIQY3QqVPPGT1/HmvonQba3P237ZBDKY38uSJjnKHowP0rzn426Slh4hs763UbZ4lSY443rwMnuSuPyq4PWxMkf/2Q==" x="1196" y="661" width="60" height="60" clip-path="url(#cp4)"/>
+<circle cx="1226" cy="691" r="30" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="1226" y="729" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">María Inés Mingrone</text>
+<text x="1226" y="743" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">de Mayato</text>
+<text x="1226" y="759" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">30/06/1942 – 4/08/2024</text>
+<rect x="922" y="865" width="162" height="142" fill="#fff4e8" stroke="#8b1a1a" stroke-width="2.5" rx="4"/>
+<rect x="922" y="865" width="5" height="142" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp5"><circle cx="1003" cy="901" r="30"/></clipPath>
+<image href="data:image/jpeg;base64,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" x="973" y="871" width="60" height="60" clip-path="url(#cp5)"/>
+<circle cx="1003" cy="901" r="30" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="1003" y="939" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Odila Natalia Marisol Mayato</text>
+<text x="1003" y="955" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">06/12/1974 – actualidad</text>
+<rect x="911.9" y="969" width="182.2" height="14" fill="#8b1a1a" stroke="none" stroke-width="0" rx="7"/>
+<text x="1003" y="979" text-anchor="middle" font-family="'Playfair Display',serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#fdf6e8">Última con el apellido Mayato</text>
+<rect x="1132" y="865" width="162" height="142" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="1132" y="865" width="4" height="142" fill="#a87828" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp6"><circle cx="1213" cy="901" r="28"/></clipPath>
+<image href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAA8ADwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDV1i3WCxknsbq6eSIBhJuBCnNYusWEyQm28ovNdRmYuzZLN1JrI+13BjaPz5NjdV3cGptOuZF1O1klZ5QrgYJJ46f1rgUPeTPUc01Y9B0XcIokZV3hBuUHpW0yHbxGpPpXP2+nS3bJcJII12jlQMnHvjpVmaaQxxRGYhXkKGT1GOP1rpTSRHK5PQzPEMdtcF7eWKGSQoThgD9K89vbWTT9JJuYdqfMytngjpgV6Le6ZNp5aeSTzY1UgBwMjPuAK898fC6k0KyaNT5EQbefct1/QVlPX3W+pSVlzpapHCRXc0NyJLVijg8Be9b0vizUyRg+WQACPetHwHb20ejXmoTxhpVmVFbGcL3Nbep+EbfVLr7Wkm0Oo+73pOtBTaktiYYeq6SlCW/Q1Lbwysrja8+PVgoFdHbaZbadAEt0/eHq/wDEfxrSRAoz3oWPLbmr6Cnh6dN3ijxZ15z0bGWvm2liYym7AztzyVPIqpJdCW0XETsmeFEfOfc+lX9TkMN3aSx/PAYRG2OxqVWt9pIcZPXtXlTjabSPUpVPcUmZWrvd3OnRwuqmeaUJHGvX6Gs6DQo59KFlenzcgrIST97v+HpW/ptqbzXoZ2BEdsrOB6nGAf1pAgILAHmunCUoT5uZXOXFVpxaUXY4mPwsNMj+y2U7JFgjbIoYEH1NVo9FvbKNYIZi6AcEzEf0rvZoVlAJAyKqm1cE7CAPerll1BttaERzCskk+hoRtmIP6ingYX3qJMeXGv4mpOce1d7OE1LG3juNOKSjIZjz6VW/s2X7SkQwRjiTH8NXtM4slHqT/OrwH7nd3rzK9NTm2zuo1ZU42RBHbR2oRIOByWPdj71hXC7buYDjDGt4d/rWNfLtv5ffB/SujD6OxhWu9WUmztk2/eBJFOjKyoHXoRSsm7eOmTjP4VUtpgI8BsEEhh6EcGuy1znHRSNviXOdynP4CrStkH61RtOJox/0z/wq30BAoY0bthxaRe4J/WrvPk/hVK0/484P90VdAzFye1edL4mdK2REO9Zeq4W8U9mQVpr/AFrM1riSE99prSj8ZNT4SiWAZx1I6flXJ3V1cRXMot5VALEtxn5u9dKGJkf61yVnGrREsMnzH/8AQjXo00csmf/Z" x="1185" y="873" width="56" height="56" clip-path="url(#cp6)"/>
+<circle cx="1213" cy="901" r="28" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="1213" y="941" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Lisandro Damián Acosta</text>
+<text x="1213" y="957" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">10/02/1976</text>
+<rect x="1027" y="1075" width="162" height="152" fill="#fef8ec" stroke="#cca060" stroke-width="1.5" rx="4"/>
+<rect x="1027" y="1075" width="4" height="152" fill="#8b1a1a" stroke="none" stroke-width="0" rx="0"/>
+<clipPath id="cp7"><circle cx="1108" cy="1111" r="28"/></clipPath>
+<image href="data:image/jpeg;base64,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" x="1080" y="1083" width="56" height="56" clip-path="url(#cp7)"/>
+<circle cx="1108" cy="1111" r="28" fill="none" stroke="#d4aa6a" stroke-width="1.8"/>
+<text x="1108" y="1151" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Shanti Odile Jazmín</text>
+<text x="1108" y="1165" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11.5" font-weight="600" font-style="normal" fill="#2d1f14">Acosta Mayato</text>
+<text x="1108" y="1181" text-anchor="middle" font-family="'EB Garamond',serif" font-size="10.5" font-weight="normal" font-style="italic" fill="#7a5030">23/02/2010</text>
+<rect x="1031.4" y="1196" width="153.2" height="14" fill="#8b1a1a" stroke="none" stroke-width="0" rx="7"/>
+<text x="1108" y="1206" text-anchor="middle" font-family="'Playfair Display',serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#fdf6e8">Linaje Mayato · Gen. VII</text>
+<rect x="1027" y="1075" width="162" height="152" fill="none" stroke="#8b1a1a" stroke-width="3" rx="4"/>
+<line x1="236" y1="74" x2="297" y2="74" stroke="#b0813a" stroke-width="1.1" stroke-dasharray="5,4"/>
+<circle cx="266" cy="74" r="3" fill="none" stroke="#b0813a" stroke-width="1.1"/>
+<rect x="220.0" y="56" width="92.0" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3" stroke-dasharray="4,3"/>
+<text x="266" y="69" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#6a4020">2das nupcias</text>
+<text x="266" y="96" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9" font-weight="normal" font-style="italic" fill="#8a6040">(sin descendencia)</text>
+<line x1="459" y1="74" x2="519" y2="74" stroke="#b0813a" stroke-width="1.6"/>
+<circle cx="489" cy="74" r="3" fill="none" stroke="#b0813a" stroke-width="1.6"/>
+<rect x="443.0" y="56" width="92.0" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3"/>
+<text x="489" y="69" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#3a2010">1ras nupcias</text>
+<line x1="601" y1="194" x2="649" y2="194" stroke="#b0813a" stroke-width="1.6"/>
+<circle cx="625" cy="194" r="3" fill="none" stroke="#b0813a" stroke-width="1.6"/>
+<rect x="579.0" y="176" width="92.0" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3"/>
+<text x="625" y="189" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#3a2010">1ras nupcias</text>
+<line x1="671" y1="343" x2="699" y2="343" stroke="#b0813a" stroke-width="1.6"/>
+<circle cx="685" cy="343" r="3" fill="none" stroke="#b0813a" stroke-width="1.6"/>
+<rect x="646.0" y="325" width="79.0" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3"/>
+<text x="685" y="338" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#3a2010">matrimonio</text>
+<line x1="1061" y1="343" x2="1117" y2="343" stroke="#b0813a" stroke-width="1.6"/>
+<circle cx="1089" cy="343" r="3" fill="none" stroke="#b0813a" stroke-width="1.6"/>
+<rect x="1043.0" y="325" width="92.0" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3"/>
+<text x="1089" y="338" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#3a2010">1ras nupcias</text>
+<line x1="1279" y1="343" x2="1330" y2="343" stroke="#b0813a" stroke-width="1.1" stroke-dasharray="5,4"/>
+<circle cx="1304" cy="343" r="3" fill="none" stroke="#b0813a" stroke-width="1.1"/>
+<rect x="1258.0" y="325" width="92.0" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3" stroke-dasharray="4,3"/>
+<text x="1304" y="338" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#6a4020">2das nupcias</text>
+<text x="1304" y="365" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9" font-weight="normal" font-style="italic" fill="#8a6040">(sin descendencia)</text>
+<line x1="1071" y1="726" x2="1145" y2="726" stroke="#b0813a" stroke-width="1.6"/>
+<circle cx="1108" cy="726" r="3" fill="none" stroke="#b0813a" stroke-width="1.6"/>
+<rect x="1069.0" y="708" width="79.0" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3"/>
+<text x="1108" y="721" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#3a2010">matrimonio</text>
+<line x1="1084" y1="936" x2="1132" y2="936" stroke="#b0813a" stroke-width="1.6"/>
+<circle cx="1108" cy="936" r="3" fill="none" stroke="#b0813a" stroke-width="1.6"/>
+<rect x="1085.0" y="918" width="46.5" height="16" fill="#ece0c2" stroke="#b0813a" stroke-width="1" rx="3"/>
+<text x="1108" y="931" text-anchor="middle" font-family="'Playfair Display',serif" font-size="11" font-weight="normal" font-style="italic" fill="#3a2010">unión</text>
+<rect x="6" y="34" width="52" height="15" fill="rgba(200,160,80,0.18)" stroke="none" stroke-width="0" rx="3"/>
+<text x="30" y="45" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#c0a050">Gen. I</text>
+<rect x="6" y="154" width="52" height="15" fill="rgba(200,160,80,0.18)" stroke="none" stroke-width="0" rx="3"/>
+<text x="30" y="165" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#c0a050">Gen. II</text>
+<rect x="6" y="276" width="52" height="15" fill="rgba(200,160,80,0.18)" stroke="none" stroke-width="0" rx="3"/>
+<text x="30" y="287" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#c0a050">Gen. III</text>
+<rect x="6" y="454" width="52" height="15" fill="rgba(200,160,80,0.18)" stroke="none" stroke-width="0" rx="3"/>
+<text x="30" y="465" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#c0a050">Gen. IV</text>
+<rect x="6" y="659" width="52" height="15" fill="rgba(200,160,80,0.18)" stroke="none" stroke-width="0" rx="3"/>
+<text x="30" y="670" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#c0a050">Gen. V</text>
+<rect x="6" y="869" width="52" height="15" fill="rgba(200,160,80,0.18)" stroke="none" stroke-width="0" rx="3"/>
+<text x="30" y="880" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#c0a050">Gen. VI</text>
+<rect x="6" y="1079" width="52" height="15" fill="rgba(200,160,80,0.18)" stroke="none" stroke-width="0" rx="3"/>
+<text x="30" y="1090" text-anchor="middle" font-family="'Playfair Display',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#c0a050">Gen. VII</text>
+<rect x="500" y="118" width="320" height="13" fill="rgba(236,224,194,0.85)" stroke="none" stroke-width="0" rx="2"/>
+<text x="660" y="128" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#7a6030">Hijos de Antonio Mayato y María Islas (1ras nupcias)</text>
+<rect x="646" y="242" width="278" height="13" fill="rgba(236,224,194,0.85)" stroke="none" stroke-width="0" rx="2"/>
+<text x="785" y="252" text-anchor="middle" font-family="'EB Garamond',serif" font-size="9.5" font-weight="normal" font-style="italic" fill="#7a6030">Hijos de Emilia Silva y Benito Vicente Mayato</text>
+</svg>
+</div>
+
+<div class="legend">
+  <h3>Referencias</h3>
+  <div class="legend-items">
+    <div class="li"><div class="ls" style="background:#fef8ec;border:1.5px solid #cca060;border-left:4px solid #8b1a1a;"></div><span>Línea sanguínea Mayato</span></div>
+    <div class="li"><div class="ls" style="background:#fef8ec;border:1.5px solid #cca060;border-left:4px solid #a87828;"></div><span>Cónyuge / pareja ingresante</span></div>
+    <div class="li"><div class="ls" style="background:#f8f8ee;border:1.5px dashed #9a9a70;"></div><span>Identidad desconocida</span></div>
+    <div class="li"><div class="ll"></div><span>Descendencia directa</span></div>
+    <div class="li"><div class="lld"></div><span>Vínculo hipotético</span></div>
+    <div class="li"><div class="ls" style="background:#fff8ee;border:2.5px solid #8b1a1a;border-left:5px solid #8b1a1a;"></div><span>Osvaldo Héctor Mayato</span></div>
+    <div class="li"><div class="ls" style="background:#fff4e8;border:2.5px solid #8b1a1a;border-left:5px solid #8b1a1a;"></div><span>Odila Natalia Marisol Mayato</span></div>
+  </div>
+</div>
+
+<div class="footnotes">
+  <h4>Fuentes documentales y notas</h4>
+  <p>† <strong>Emilia Silva</strong> tuvo también hijos con Feliciano Vico (Segundo, Catalina y Marta Vico), medios hermanos de Antonio Gregorio Mayato por parte de madre. Al no ser descendientes de ningún Mayato, no se incluyen en este árbol sanguíneo.</p>
+  <p class="fn-src">&#9312; <strong>Testamento de Antonio Mayato — 7 de junio de 1843</strong> (AGN, Protocolos Notariales, r.&thinsp;5, 1842–1843, f.&thinsp;42, doc.&thinsp;515): Antonio Mayato, <em>negro, natural de África</em>, casado con María Islas. Cuatro hijos: Marta, Juan Pablo, Eustaquia y Benito (~17 años). Posee herramientas de albañil. Cofradía de Nuestra Señora del Socorro.</p>
+  <p class="fn-src">&#9313; <strong>Testamento de Antonio Mayato — 5 de marzo de 1861</strong> (AGN, PN, r.&thinsp;6, 1861, f.&thinsp;92v., doc.&thinsp;836): viudo de María Islas, casado en segundas nupcias con Josefa Gutiérrez. <strong>Antonio estaba vivo en 1861. No se conocen las fechas exactas de nacimiento ni de muerte de ninguno.</strong></p>
+  <p class="fn-src">&#9314; <strong>Registro de bautismo de Benito Vicente Mayato — 3 de abril de 1824</strong> (Libro de Bautismos, Iglesia de Monserrat, Tomo&thinsp;1 y 2, fol.&thinsp;92): padres <em>Antonio Mayato y María Islas, morenos y libres</em>.</p>
+  <p>* <strong>Hipótesis sobre Lucila Mayato de Mayato:</strong> si fue hija de Juan Pablo Mayato (hermano de Benito Vicente), sería prima hermana de Antonio Gregorio. Pendiente de confirmación en el AGN.</p>
+  <p>&#9315; <strong>Antonio Vicente Evaristo Mayato:</strong> sin descendencia. Vivo en 1951, construyó una casa en San Antonio de Padua.</p>
+  <p>&#9316; Fechas de Osvaldo Héctor Mayato (8/5/1931–11/9/2006) y María Inés Mingrone de Mayato (30/06/1942–4/08/2024) confirmadas por Odila Natalia Marisol Mayato.</p>
+  <p>&#9317; <strong>Shanti Odile Jazmín Acosta Mayato</strong> lleva sangre Mayato por línea materna directa. El apellido Mayato figura como segundo apellido conforme al registro civil argentino.</p>
+</div>
+</body>
+</html>
